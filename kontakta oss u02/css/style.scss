@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,500&display=swap');
+
+
+$font-style: 'Open Sans', sans-serif;
+
+
+$primary-color: #f7a31d;
+$secondary-color: #364966;
+$terciary-color: white;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+
+html {
+     font-family: $font-style;
+     font-weight: normal;
+
+      }
+      .container {
+        margin-left: auto;
+        margin-right: auto;
+        padding: 40px;
+      }
+
+/* Form sida */
+
+
+  
+  .article {
+    margin: 40px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .header {
+    font-size: 36px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  p {
+    font-size: 16px;
+    line-height: 25px;
+    padding-top: 20px;
+    bottom: 20px;
+  }
+  
+  .texts {
+    font-weight: bold;
+    font-size: 20px;
+  }
+  
+  .image {
+    display: block;
+    padding-top: 30px;
+    margin: auto;
+    width: 80%;
+  
+
+  }
+  
+  
+  form { 
+    width: 100%;
+    background: $primary-color;
+    padding: 25px;
+    margin-top: 20px;
+    font-size: 16px;
+    border-radius: 15px;    
+    label {
+        width: 100%;
+        display: inline-block;
+        border: none;
+        font-size: 16px;
+    }
+       .control{
+        width: 100%;
+        background-color: $terciary-color;
+            color: rgb(11, 11, 11);
+            padding: 10px 10px 10px 10px;
+            display: inline-block;
+            margin: 15px 0 15px 0;
+            border: none;
+            font-size: 16px;
+            border-radius: 12px;}
+            box-shadow: 2px 3px 10px  2px  rgba(68, 67, 67, 0.584);  
+       }
+      
+       .contact{
+        width: 80%;
+        padding: 10px 10px 10px 10px;
+        margin: 5px 0 15px 0;
+        display: inline-block;
+        border: none;
+        font-size: 16px;
+        border-radius: 18px;
+    }
+        .btn {
+            background-color: #364966;
+            color: white;
+            padding: 15px 20px;
+            margin: 10px 0;
+            border: none;
+            cursor: pointer;
+            font-size: 18px;
+            border-radius: 18px;
+            box-shadow: 2px 3px 10px  2px  white;   
+        }
+    
+
+/* media query START */
+@media (max-width: 700px) {
+    .header-ls {
+      font-size: 24px;
+    }
+    .container-ls {
+      padding: 10px;
+      margin-top: 10px;
+    }
+  }

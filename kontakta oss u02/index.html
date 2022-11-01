@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Jam hemsida</title>
+    <!--Länk för stil-->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+   <main>
+        <!-- Kontaktsida börjar-->
+        <section class="container"> 
+            <h1 class="header">Kontakt</h1>
+
+            <img class="image" src="contact.jpeg" alt="">
+
+            <article class="article">
+
+                <p class="texts">
+                    Kontaktuppgifter till oss på Jam.
+
+                <p>
+                    Jam , Sveriges i särklass populäraste hemsida för musikinstrumentt. Du är alltid välkommen att kontakta via e-post, post eller fax. 
+                <p>
+                    För att vi ska kunna kontakta dig, vänligen fyll i kontaktformuläret nedan.
+                </p>
+                <!-- Kontaktformulär -->
+                <section>
+                    <form name="formular" id="formular" method="post">
+                    <div class="card">
+                        <label>Förnamn:</label>
+                        <input type="text" name="fnamn" id="fnamn" class="control" > <br>
+                    </div> 
+                    <div class="card">
+                        <label>Efternamn:</label>
+                        <input type="text" name="enamn" id="enamn" class="control"><br>
+                    </div> 
+                    <div class="card">
+                        <label>E-postadress:</label>
+                        <input type="email" name="email" id="email" class="control"> 
+                    </div><br>
+                        <label class="contact" for="order-contact"> Vill kontakta</label>
+                    
+                        <select class="contact" name="order-contact" id="order-contact">
+                            <option value="JAM Synth/Kej/Studio">JAM Synth/Kej/Studio</option>
+                            <option value="JAM Order/Webshop">JAM Order/Webshop</option>
+                            <option value="JAM Gitarrer/service">JAM Gitarrer/serviceo</option>
+                            <option value="JAM Ljud,Ljus och Trummor">JAM Ljud,Ljus och Trummor</option>
+                            <option value="Service Elpiano & Clavinet">Service Elpiano & Clavinet</option>
+                            <option value="Service Gitarr">Service Gitarr</option>
+                        </select>
+                        <br>
+                        <input class="btn" type="submit" name="skicka" id="skicka" value="Skicka" />
+                    </form>
+                </section>
+            </article>
+        </section>
+        <!-- Kontakt slutar -->
+    </main>
+</body>
+</html>
