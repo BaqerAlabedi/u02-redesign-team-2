@@ -1,0 +1,492 @@
+@charset "UTF-8";
+@-webkit-keyframes moveInleft {
+  0% {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  80% {
+    transform: translateX(50px);
+  }
+  100% {
+    opacity: 0.8;
+    transform: translate(0);
+  }
+}
+@keyframes moveInleft {
+  0% {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  80% {
+    transform: translateX(50px);
+  }
+  100% {
+    opacity: 0.8;
+    transform: translate(0);
+  }
+}
+@-webkit-keyframes moveInright {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  80% {
+    transform: translateX(50px);
+  }
+  100% {
+    opacity: 0.8;
+    transform: translate(0);
+  }
+}
+@keyframes moveInright {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  80% {
+    transform: translateX(50px);
+  }
+  100% {
+    opacity: 0.8;
+    transform: translate(0);
+  }
+}
+/*product section end*/
+/*footer section start*/
+/* dekstop end */
+/* media quiry start */
+/* hero section end*/
+/* ljud kort section end*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+html body {
+  width: 100%;
+}
+
+#hero {
+  background-image: linear-gradient(to right bottom, rgba(33, 32, 29, 0.407), rgba(237, 195, 11, 0.521)), url(../image/gittarimage.jpg);
+  background-position: top;
+  background-size: cover;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+          clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+  width: 100%;
+  height: 80vh;
+  position: relative;
+}
+
+.hero-container {
+  position: absolute;
+  width: 40%;
+  height: 100vh;
+  display: block;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 0 auto;
+  top: 30%;
+  left: 25%;
+}
+.hero-container h1 {
+  font-size: 30px;
+  color: rgb(59, 54, 54);
+  text-transform: uppercase;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 20px;
+  -webkit-animation-name: moveInright;
+          animation-name: moveInright;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-timing-function: ease-out;
+          animation-timing-function: ease-out;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+}
+.hero-container p {
+  -webkit-animation-name: moveInleft;
+          animation-name: moveInleft;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-timing-function: ease-out;
+          animation-timing-function: ease-out;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+  font-weight: 500;
+  color: rgb(35, 33, 33);
+  font-size: 20px;
+  text-align: center;
+}
+
+.btn-hero {
+  position: absolute;
+  text-align: center;
+  left: 30%;
+  color: #000;
+  margin-top: 60px;
+}
+.btn-hero:link {
+  display: inline-block;
+  text-decoration: none;
+  padding: 20px 20px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: transform 0.3s;
+  margin: 20px 60px;
+  border-radius: 50px;
+  background-color: #fff;
+  width: 250px;
+  font-size: 15px;
+  font-weight: 700;
+  box-shadow: 2px 2px rgba(152, 148, 148, 0.69);
+}
+.btn-hero:hover {
+  text-transform: uppercase;
+  transform: scale(1.1);
+  transition: transform 0.3s;
+  color: rgb(32, 30, 30);
+}
+
+.btn:visited {
+  display: inline-block;
+  text-decoration: none;
+  padding: 20px 20px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: transform 0.3s;
+  margin: 20px 60px;
+  border-radius: 50px;
+  background-color: #fff;
+  width: 250px;
+  font-size: 15px;
+  font-weight: 700;
+  box-shadow: 2px 2px rgba(152, 148, 148, 0.69);
+}
+
+/* hero section end */
+#ljud-kort-list {
+  background-color: hsl(38deg, 67%, 51%);
+  padding: 3rem;
+}
+#ljud-kort-list .ljud-card {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 2rem 2rem rgba(31, 30, 30, 0.1);
+}
+
+.ljud-image {
+  width: 300px;
+}
+
+.ljud-container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 3rem;
+  grid-row-gap: 3rem;
+}
+
+.h1-text {
+  text-align: center;
+  font-size: 40px;
+  padding: 10px;
+  font-weight: 900;
+  color: white;
+  text-transform: uppercase;
+}
+
+.pris-div {
+  border: 1px solid #000;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  padding: 20px;
+  font-size: 20px;
+  font-weight: 900;
+  text-align: center;
+  background-color: hsl(38deg, 67%, 51%);
+  float: right;
+}
+
+.ljud-kort-tittle {
+  font-size: 30px;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: hsl(38deg, 67%, 51%);
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.ljud-description {
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 1rem;
+  padding: 10px;
+}
+
+.köp-btn {
+  background-color: hsl(38deg, 67%, 51%);
+  border: 1px solid transparent;
+  font-size: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 20px 20px;
+  width: 25vw;
+  height: 8vh;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  box-shadow: 4px 6px rgba(83, 81, 81, 0.2);
+  transition: transform 0.3s;
+}
+.köp-btn:hover {
+  background-color: hsl(38deg, 67%, 51%);
+  transform: scale(1.1);
+  transition: transform 0.3s;
+  cursor: pointer;
+}
+
+/* ljud kort section end */
+.container-bottom {
+  border-top: 4px solid hsl(38deg, 67%, 51%);
+  margin: 20px;
+}
+
+#footer-container {
+  display: flex;
+  background: hsl(40deg, 13%, 86%);
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 20px;
+  width: 100VW;
+  height: 50vh;
+}
+
+#image-logo {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 70px;
+}
+#image-logo img {
+  width: 50px;
+  height: 50px;
+  border: 1px solid hsl(38deg, 67%, 51%);
+  border-radius: 50%;
+}
+
+.footer-left {
+  color: hsl(0deg, 0%, 0%);
+  font-size: 10px;
+  top: 210%;
+  font-weight: 500;
+  left: 2px;
+}
+.footer-left h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: hsl(38deg, 67%, 51%);
+  font-weight: 700;
+}
+.footer-left p {
+  font-size: 15px;
+  font-weight: 600;
+  color: rgb(49, 46, 46);
+  text-align: left;
+  padding: 5px;
+}
+.footer-left i {
+  padding-right: 5px;
+}
+
+.footer-center {
+  color: hsl(0deg, 0%, 0%);
+  font-size: 10px;
+  font-weight: 500;
+}
+
+.subscribe > form {
+  margin-top: 2rem;
+  height: auto;
+  left: 50%;
+}
+.subscribe > form > input {
+  width: 100%;
+  height: 30px;
+  border: 1px solid hsl(38deg, 67%, 51%);
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  box-shadow: 5px 4px hsla(45deg, 4%, 57%, 0.637);
+}
+
+.subscribe-button {
+  width: 100%;
+  height: 30px;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  box-shadow: 5px 4px hsla(45deg, 4%, 57%, 0.637);
+  border: 1px solid hsl(38deg, 67%, 51%);
+  background-color: hsl(38deg, 67%, 51%);
+  color: hsla(60deg, 1%, 16%, 0.637);
+  font-weight: 600;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.payment {
+  margin-top: 1rem;
+  font-size: 40px;
+  color: hsl(0deg, 0%, 0%);
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+  padding-top: 5px;
+  margin: auto;
+}
+.payment i {
+  font-size: 30px;
+  padding: 10px 10px;
+  border: 1px solid hsl(38deg, 67%, 51%);
+  border-radius: 50%;
+  background-color: hsl(38deg, 67%, 51%);
+  transition: transform 0.5s;
+  cursor: pointer;
+}
+.payment i:hover {
+  transform: scale(1.2);
+  background-color: hsl(38deg, 67%, 51%);
+  color: white;
+}
+
+.footer-right {
+  color: hsl(0deg, 0%, 0%);
+  font-size: 10px;
+  font-weight: 500;
+}
+.footer-right i {
+  font-size: 25px;
+  color: hsl(0deg, 0%, 0%) !important;
+  justify-items: right;
+  border: 1px solid hsl(38deg, 67%, 51%);
+  padding: 10px 10px;
+  border-radius: 50%;
+  background: hsl(38deg, 67%, 51%);
+  transition: transform 0.5s;
+}
+.footer-right i:hover {
+  color: white !important;
+  cursor: pointer;
+  transform: scale(1.2);
+}
+
+.copy {
+  font-size: 15px;
+  color: hsl(0deg, 0%, 0%);
+  font-weight: 500;
+  letter-spacing: 2px;
+  padding: 10px;
+  text-align: center;
+  background-color: none;
+}
+
+@media screen and (max-width: 600px) {
+  .btn-hero:link {
+    position: absolute;
+    top: 40%;
+    left: -50px;
+    width: 150px;
+    font-size: 10px;
+  }
+  .ljud-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 80%;
+    height: 100%;
+    text-align: center;
+    background: hsl(38deg, 67%, 51%);
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  #ljud-kort-list .ljud-card {
+    width: 130%;
+  }
+  .ljud-image {
+    width: 70%;
+  }
+  .köp-btn {
+    width: 100%;
+    height: 6vh;
+    font-size: 15px;
+    margin-top: 10px;
+  }
+  .ljud-kort-tittle {
+    font-size: 20px;
+  }
+  #footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-basis: 100%;
+    height: 100%;
+  }
+  #footer-container h1 {
+    font-size: 20px;
+    text-align: center;
+  }
+  #footer-container p {
+    font-size: 15px;
+    text-align: center;
+  }
+  .image-logo img {
+    width: 70px;
+    height: 8vh;
+    bottom: 40%;
+  }
+  .footer-left {
+    align-items: center;
+  }
+  .footer-left h3 {
+    font-size: 25px;
+    margin-right: 20px;
+    padding: 2px 5px 5px 20px;
+  }
+  .footer-left p {
+    font-size: 20px;
+    padding: 2px 5px 5px 20px;
+  }
+  .footer-center {
+    width: 100px;
+    align-items: center;
+    margin-top: 20px;
+  }
+  .footer-center input {
+    padding: 5px;
+    margin-top: 15px;
+  }
+  .footer-center button {
+    padding: 5px;
+  }
+  .footer-center i {
+    font-size: 20px;
+    padding: 5px 5px;
+    margin-right: 4px;
+  }
+  .footer-right i {
+    font-size: 20px;
+    padding: 5px 5px;
+    margin-right: 4px;
+  }
+  .copy {
+    margin-top: 10px;
+    text-align: center;
+    font-size: 15px;
+  }
+}/*# sourceMappingURL=style.css.map */
