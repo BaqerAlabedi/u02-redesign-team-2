@@ -1,0 +1,33 @@
+.border{
+ border-style: solid;
+ color: #f7a31d;;
+}
+h1{
+    color: #f7a31d;;
+}
+h3{
+    color: black;
+}
+.Piano{
+    padding-top: 10rem;
+}
+.Högtalare{
+    padding-top: 10rem;
+}
+.Trumma{
+    padding-top: 10rem;
+}
+
+
+@media (max-width:700px) {
+    /* For tablets: */
+    .img{
+      font-size: 13px;
+    }
+    .h5{
+        font-size: 20px;
+    }
+    .h3{
+        font-size: 20px;
+    }
+}
