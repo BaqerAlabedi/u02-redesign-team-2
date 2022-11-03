@@ -24,10 +24,13 @@ h3{
     .img{
       font-size: 13px;
     }
-    .h5{
+    .h1{
         font-size: 20px;
     }
     .h3{
         font-size: 20px;
+    }
+    .border{
+        font-size: 13px;
     }
 }
