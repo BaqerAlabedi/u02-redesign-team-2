@@ -14,6 +14,17 @@
 </head>
 
 <body>
+    <section id="hero">
+        <div class="hero-container">
+            <div class="hero-info">
+                <h1>Välkommen till vår hemsida!</h1>
+                <p> När hösten kommer vill man spela musik, så det kanske är dags att unna sig ett nytt instrument?</p>
+                <a href="#" class="btn-hero"> uptäck våra produkter</a>
+
+
+            </div>
+        </div>
+    </section>
     <header>
 
         <img src="./images/logo/logo.png" class="logo" alt="jam logo">
@@ -52,6 +63,7 @@
                         <li><a href="#">Programvara</a></li>
                         <li><a href="#">Hörlurar</a></li>
                         <li><a href="#">Mikrofoner</a></li>
+                        <li><a href="./ljudkort.html">Ljudkort</a></li>
                     </ul>
                 </li>
                 <li><a href="#">Gitarrbyggcentrum</a></li>
@@ -60,26 +72,112 @@
         </nav>
 
     </header>
-    <section class="slideshow" tabindex="0">
-        <a class="carousel__skip-link" href="#skip-link">Skip the Carousel</a>
-        <div class="slides">
-            <div class="slides-item slide-1" id="slide-1" aria-label="slide 1 of 5" tabindex="0">Product 1</div>
-            <div class="slides-item slide-2" id="slide-2" aria-label="slide 2 of 5" tabindex="0">Product 2</div>
-            <div class="slides-item slide-3" id="slide-3" aria-label="slide 3 of 5" tabindex="0">Product 3</div>
-            <div class="slides-item slide-4" id="slide-4" aria-label="slide 4 of 5" tabindex="0">Product 4</div>
-            <div class="slides-item slide-5" id="slide-5" aria-label="slide 5 of 5" tabindex="0">Product 5</div>
+
+    <section>
+
+        <div id="scene">
+            <div id="left-zone">
+                <ul class="list">
+                    <li class="item"><input type="radio" id="popular_product_1" name="basic_carousel"
+                            value="popular_product_1" checked="checked"><label class="label_product_1"
+                            for="popular_product_1">Product 1</label>
+                        <div class="content content_popular_product_1">
+                            <h2>Lorem ipsum dolor sit amet.</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, fugiat.</p>
+                            <img src="./images/product-images/f1.jpg">
+                        </div>
+                    </li>
+
+                    <li class="item"><input type="radio" id="popular_product_2" name="basic_carousel"
+                            value="popular_product_2"><label class="label_product_2" for="popular_product_2">Product
+                            2</label>
+                        <div class="content content_popular_product_2">
+                            <h2>Lorem ipsum dolor sit amet.</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, fugiat.</p>
+                            <img src="./images/product-images/f2.jpg">
+                        </div>
+                    </li>
+
+                    <li class="item"><input type="radio" id="popular_product_3" name="basic_carousel"
+                            value="popular_product_3"><label class="label_product_3" for="popular_product_3">Product
+                            3</label>
+                        <div class="content content_popular_product_3">
+                            <h2>Lorem ipsum dolor sit amet.</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, fugiat.</p>
+                            <img src="./images/product-images/f3.jpg">
+                        </div>
+                    </li>
+
+                    <li class="item"><input type="radio" id="popular_product_4" name="basic_carousel"
+                            value="popular_product_4"><label class="label_product_4" for="popular_product_4">Product
+                            4</label>
+                        <div class="content content_popular_product_4">
+                            <h2>Lorem ipsum dolor sit amet.</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, fugiat.</p>
+                            <img src="./images/product-images/f9.jpg">
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <div id="middle-border"></div>
+            <div id="right-zone"></div>
         </div>
-        <div class="slides_nav">
-            <a class="slider_nav" href="#slide-1" aria-label="Go to slide 1">1</a>
-            <a class="slider_nav" href="#slide-2" aria-label="Go to slide 2">2</a>
-            <a class="slider_nav" href="#slide-3" aria-label="Go to slide 3">3</a>
-            <a class="slider_nav" href="#slide-4" aria-label="Go to slide 4">4</a>
-            <a class="slider_nav" href="#slide-5" aria-label="Go to slide 5">5</a>
-        </div>
-        <div class="carousel__skip-message" id="skip-link" tabindex="0"></div>
+
     </section>
 
 
+
+    <footer id="footer-container">
+
+
+        <section class="footer-left">
+            <div id="image-logo"> <img src="./images/logo/logo.png " class="imglogo2" alt=" jam logo"></div>
+            <h3>Kontakta Oss </h3>
+            <p><i class="fa fa-envelope"></i> order@jam.se</p>
+            <p> <i class="fa fa-phone"></i>08-612 21 23</p>
+            <p><i class="fa fa-map-marker"></i><span>Roslagsgatan 19, </span> <br> 11355 Stockholm</p>
+
+        </section>
+
+        <section class="footer-center">
+            <div class="subscribe">
+                <form action="">
+                    <input class="email" type="email" name="" id="" placeholder="Ange ditt mail">
+                    <button class="subscribe-button"> Nyhetsbrev</button>
+                </form>
+            </div>
+            <div class="payment">
+                <i class="fa-brands fa-cc-visa"></i>
+                <i class="fa-brands fa-cc-mastercard"></i>
+                <i class="fa-brands fa-cc-paypal"></i>
+
+            </div>
+
+            <div class="copy">
+                <p class="footer-company-name">JAM &copy; 1996-2022 <i class="fa-solid fa-copyright"></i>
+                    copyright 2022</p>
+
+            </div>
+        </section>
+
+        <section class="footer-right">
+            <div>
+                <a href="#https://www.facebook.com/jamsweden/">
+                    <i class="fa-brands fa-facebook"></i></a>
+                <a href="#"> <i class="fa-brands fa-square-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+
+
+            </div>
+
+
+
+
+        </section>
+
+
+    </footer>
 </body>
 
 </html>

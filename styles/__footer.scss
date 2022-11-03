@@ -1,0 +1,239 @@
+.container-bottom {
+	border-top: 4px solid hsl(38, 67%, 51%);
+	margin: 20px;
+}
+#footer-container {
+	display: flex;
+	background: hsl(40, 13%, 86%);
+	justify-content: space-between;
+	flex-wrap: wrap;
+	align-items: center;
+	padding: 20px;
+	width: 100VW;
+	height: 50vh;
+}
+#image-logo {
+	width: 50px;
+	height: 50px;
+	margin-bottom: 70px;
+	img {
+		width: 50px;
+		height: 50px;
+		border: 1px solid hsl(38, 67%, 51%);
+		border-radius: 50%;
+	}
+}
+.footer-left {
+	color: $color_6;
+	font-size: 10px;
+	top: 210%;
+	font-weight: 500;
+	left: 2px;
+	h3 {
+		font-size: 20px;
+		margin-bottom: 10px;
+		color: $color_5;
+		font-weight: 700;
+	}
+	p {
+		font-size: 15px;
+		font-weight: 600;
+		color: $color_7;
+		text-align: left;
+		padding: 5px;
+	}
+	i {
+		padding-right: 5px;
+	}
+}
+.footer-center {
+	color: $color_6;
+	font-size: 10px;
+	font-weight: 500;
+}
+.subscribe {
+	>form {
+		margin-top: 2rem;
+		height: auto;
+		left: 50%;
+		>input {
+			width: 100%;
+			height: 30px;
+			border: 1px solid hsl(38, 67%, 51%);
+			border-radius: 5px;
+			padding: 10px;
+			margin-bottom: 15px;
+			border-radius: 10px;
+			box-shadow: 5px 4px hsla(45, 4%, 57%, 0.637);
+		}
+	}
+}
+.subscribe-button {
+	width: 100%;
+	height: 30px;
+	padding: 10px;
+	margin-bottom: 15px;
+	border-radius: 10px;
+	box-shadow: 5px 4px hsla(45, 4%, 57%, 0.637);
+	border: 1px solid hsl(38, 67%, 51%);
+	background-color: $background-color_2;
+	color: $color_8;
+	font-weight: 600;
+	font-size: 15px;
+	cursor: pointer;
+}
+.payment {
+	margin-top: 1rem;
+	font-size: 40px;
+	color: $color_6;
+	font-weight: 500;
+/* 	display: flex; */
+	justify-content: center;
+	padding-top: 5px;
+	margin: auto;
+	i {
+		font-size: 30px;
+		padding: 10px 10px;
+		border: 1px solid hsl(38, 67%, 51%);
+		border-radius: 50%;
+		background-color: $background-color_2;
+		transition: transform 0.5s;
+		cursor: pointer;
+		&:hover {
+			transform: scale(1.2);
+			background-color: $background-color_2;
+			color: $color_9;
+		}
+	}
+}
+.footer-right {
+	color: $color_6;
+	font-size: 10px;
+	font-weight: 500;
+	i {
+		font-size: 25px;
+		color: $color_6 !important;
+		justify-items: right;
+		border: 1px solid hsl(38, 67%, 51%);
+		padding: 10px 10px;
+		border-radius: 50%;
+		background: hsl(38, 67%, 51%);
+		transition: transform 0.5s;
+		&:hover {
+			color: $color_9 !important;
+			cursor: pointer;
+			transform: scale(1.2);
+		}
+	}
+}
+.copy {
+	font-size: 15px;
+	color: $color_6;
+	font-weight: 500;
+	letter-spacing: 2px;
+	padding: 10px;
+	text-align: center;
+	background-color: $background-color_3;
+}
+@media screen and (max-width: 600px) {
+	.btn-hero {
+		&:link {
+			position: absolute;
+			top: 40%;
+			left: -50px;
+			width: 150px;
+			font-size: 10px;
+		}
+	}
+	.ljud-container {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		width: 80%;
+		height: 100%;
+		text-align: center;
+		background: hsl(38, 67%, 51%);
+		margin-top: 20px;
+		margin-bottom: 20px;
+	}
+	#ljud-kort-list {
+		.ljud-card {
+			width: 130%;
+		}
+	}
+	.ljud-image {
+		width: 70%;
+	}
+	.köp-btn {
+		width: 100%;
+		height: 6vh;
+		font-size: 15px;
+		margin-top: 10px;
+	}
+	.ljud-kort-tittle {
+		font-size: 20px;
+	}
+	#footer-container {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		flex-basis: 100%;
+		height: 100%;
+		h1 {
+			font-size: 20px;
+			text-align: center;
+		}
+		p {
+			font-size: 15px;
+			text-align: center;
+		}
+	}
+	.image-logo {
+		img {
+			width: 70px;
+			height: 8vh;
+			bottom: 40%;
+		}
+	}
+	.footer-left {
+		align-items: center;
+		h3 {
+			font-size: 25px;
+			margin-right: 20px;
+			padding: 2px 5px 5px 20px;
+		}
+		p {
+			font-size: 20px;
+			padding: 2px 5px 5px 20px;
+		}
+	}
+	.footer-center {
+		width: 100px;
+		align-items: center;
+		margin-top: 20px;
+		input {
+			padding: 5px;
+			margin-top: 15px;
+		}
+		button {
+			padding: 5px;
+		}
+		i {
+			font-size: 20px;
+			padding: 5px 5px;
+			margin-right: 4px;
+		}
+	}
+	.footer-right {
+		i {
+			font-size: 20px;
+			padding: 5px 5px;
+			margin-right: 4px;
+		}
+	}
+	.copy {
+		margin-top: 10px;
+		text-align: center;
+		font-size: 15px;
+	}
+}
