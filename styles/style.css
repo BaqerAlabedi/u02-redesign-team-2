@@ -93,6 +93,234 @@ header label {
     display: initial;
   }
 }
+@-webkit-keyframes slidein {
+  0% {
+    top: -400px;
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    top: 0px;
+  }
+}
+@keyframes slidein {
+  0% {
+    top: -400px;
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    top: 0px;
+  }
+}
+@-webkit-keyframes slideout {
+  0% {
+    top: 0;
+    opacity: 1;
+  }
+  100% {
+    top: -400px;
+    opacity: 0;
+  }
+}
+@keyframes slideout {
+  0% {
+    top: 0;
+    opacity: 1;
+  }
+  100% {
+    top: -400px;
+    opacity: 0;
+  }
+}
+body {
+  background: get-color(gray);
+  font-family: "Tahoma";
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+body #scene {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  width: 1000px;
+  height: 400px;
+  position: relative;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  background-color: white;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  overflow: hidden;
+}
+body #scene #left-zone {
+  background: white;
+  height: 75%;
+  flex-grow: 0;
+  display: flex;
+  width: 350px;
+  align-items: center;
+  justify-content: left;
+}
+body #scene #left-zone .list {
+  display: flex;
+  list-style: none;
+  align-content: stretch;
+  flex-direction: column;
+  flex-grow: 1;
+  margin: 0;
+  padding: 0;
+}
+body #scene #left-zone .list li.item input[type=radio] {
+  display: none;
+}
+body #scene #left-zone .list li.item input[type=radio] ~ label {
+  display: block;
+  opacity: 0.5;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+}
+body #scene #left-zone .list li.item input[type=radio] ~ label:first-letter {
+  text-transform: uppercase;
+}
+body #scene #left-zone .list li.item input[type=radio] ~ label:hover {
+  opacity: 0.75;
+  cursor: pointer;
+}
+body #scene #left-zone .list li.item input[type=radio] ~ label.label_strawberry:before {
+  content: " ";
+  display: block;
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  margin-left: 15px;
+  background-position: center;
+  background-size: 75% 75%;
+  background-repeat: no-repeat;
+}
+body #scene #left-zone .list li.item input[type=radio] ~ label.label_banana:before {
+  content: " ";
+  display: block;
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  margin-left: 15px;
+  background-position: center;
+  background-size: 75% 75%;
+  background-repeat: no-repeat;
+}
+body #scene #left-zone .list li.item input[type=radio] ~ label.label_apple:before {
+  content: " ";
+  display: block;
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  margin-left: 15px;
+  background-position: center;
+  background-size: 75% 75%;
+  background-repeat: no-repeat;
+}
+body #scene #left-zone .list li.item input[type=radio] ~ label.label_orange:before {
+  content: " ";
+  display: block;
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  margin-left: 15px;
+  background-position: center;
+  background-size: 75% 75%;
+  background-repeat: no-repeat;
+}
+body #scene #left-zone .list li.item input[type=radio] ~ .content {
+  position: absolute;
+  left: 350px;
+  top: -400px;
+  width: 650px;
+  height: 400px;
+  -webkit-animation-duration: 0.75s;
+          animation-duration: 0.75s;
+  -webkit-animation-name: slideout;
+          animation-name: slideout;
+  -webkit-animation-timing-function: ease-out;
+          animation-timing-function: ease-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+body #scene #left-zone .list li.item input[type=radio] ~ .content.content_strawberry h1 {
+  color: get-color(strawberry);
+}
+body #scene #left-zone .list li.item input[type=radio] ~ .content.content_banana h1 {
+  color: get-color(banana);
+}
+body #scene #left-zone .list li.item input[type=radio] ~ .content.content_apple h1 {
+  color: get-color(apple);
+}
+body #scene #left-zone .list li.item input[type=radio] ~ .content.content_orange h1 {
+  color: get-color(orange);
+}
+body #scene #left-zone .list li.item input[type=radio] ~ .content h1:first-letter {
+  text-transform: uppercase;
+}
+body #scene #left-zone .list li.item input[type=radio] ~ .content p {
+  max-width: 50%;
+  text-align: center;
+}
+body #scene #left-zone .list li.item input[type=radio]:checked ~ label {
+  opacity: 1;
+  -webkit-animation: all 1s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+          animation: all 1s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+body #scene #left-zone .list li.item input[type=radio]:checked ~ label.label_strawberry {
+  color: get-color(strawberry);
+  border-right: solid 4px get-color(strawberry);
+}
+body #scene #left-zone .list li.item input[type=radio]:checked ~ label.label_banana {
+  color: get-color(banana);
+  border-right: solid 4px get-color(banana);
+}
+body #scene #left-zone .list li.item input[type=radio]:checked ~ label.label_apple {
+  color: get-color(apple);
+  border-right: solid 4px get-color(apple);
+}
+body #scene #left-zone .list li.item input[type=radio]:checked ~ label.label_orange {
+  color: get-color(orange);
+  border-right: solid 4px get-color(orange);
+}
+body #scene #left-zone .list li.item input[type=radio]:checked ~ .content {
+  -webkit-animation-duration: 0.75s;
+          animation-duration: 0.75s;
+  -webkit-animation-name: slidein;
+          animation-name: slidein;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-timing-function: cubic-bezier(0.455, 0.03, 0.515, 0.955);
+          animation-timing-function: cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+body #scene #middle-border {
+  background-color: gray;
+  height: 75%;
+  flex-grow: 1;
+  max-width: 2px;
+  z-index: 0;
+}
+body #scene #right-zone {
+  background: white;
+  height: 100%;
+  flex-grow: 3;
+}
+
+@media (max-width: 768px) {
+  body #scene {
+    display: none;
+  }
+}
 .search, .search-2 {
   display: flex;
   align-items: center;
@@ -305,6 +533,11 @@ html body {
   box-shadow: 2px 2px rgba(152, 148, 148, 0.69);
 }
 
+@media (max-width: 768px) {
+  .hero-container p {
+    font-size: 15px;
+  }
+}
 #ljud-kort-list {
   background-color: hsl(38deg, 67%, 51%);
   padding: 3rem;
@@ -626,225 +859,134 @@ html body {
     font-size: 15px;
   }
 }
-@-webkit-keyframes slidein {
-  0% {
-    top: -400px;
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-    top: 0px;
-  }
+.border {
+  border-style: solid;
+  color: #f7a31d;
 }
-@keyframes slidein {
-  0% {
-    top: -400px;
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-    top: 0px;
-  }
+
+h1 {
+  color: #f7a31d;
 }
-@-webkit-keyframes slideout {
-  0% {
-    top: 0;
-    opacity: 1;
-  }
-  100% {
-    top: -400px;
-    opacity: 0;
-  }
+
+h3 {
+  color: black;
 }
-@keyframes slideout {
-  0% {
-    top: 0;
-    opacity: 1;
+
+.Piano {
+  padding-top: 10rem;
+}
+
+.Högtalare {
+  padding-top: 10rem;
+}
+
+.Trumma {
+  padding-top: 10rem;
+}
+
+@media (max-width: 700px) {
+  /* For tablets: */
+  .img {
+    font-size: 13px;
   }
-  100% {
-    top: -400px;
-    opacity: 0;
+  .h5 {
+    font-size: 20px;
+  }
+  .h3 {
+    font-size: 20px;
   }
 }
 body {
-  background: get-color(gray);
-  font-family: "Tahoma";
-  -moz-user-select: none;
-  -webkit-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
+  margin-top: 5em;
 }
-body #scene {
+
+.border {
+  border-style: solid;
+  color: #f7a31d;
+}
+
+h5 {
+  color: black;
+}
+
+.om-oss-pic {
+  width: 20em;
+  height: 15em;
+}
+
+@media (max-width: 700px) {
+  /* For tablets: */
+  .h1 {
+    font-size: 20px;
+  }
+  .h3 {
+    font-size: 20px;
+  }
+  .border {
+    font-size: 13px;
+  }
+}
+.border {
+  border-style: double;
+  color: orange;
+}
+
+.Produktlista {
   display: flex;
-  align-items: center;
-  justify-content: left;
-  width: 1000px;
-  height: 400px;
-  position: relative;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  margin: auto;
-  background-color: white;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-  overflow: hidden;
+  flex-direction: row;
 }
-body #scene #left-zone {
-  background: white;
-  height: 75%;
-  flex-grow: 0;
-  display: flex;
-  width: 350px;
-  align-items: center;
-  justify-content: left;
+
+.Neråt {
+  margin-top: 2em;
+  padding: 0 6em 0;
+  padding-bottom: 15em;
 }
-body #scene #left-zone .list {
-  display: flex;
-  list-style: none;
-  align-content: stretch;
-  flex-direction: column;
-  flex-grow: 1;
-  margin: 0;
-  padding: 0;
-}
-body #scene #left-zone .list li.item input[type=radio] {
-  display: none;
-}
-body #scene #left-zone .list li.item input[type=radio] ~ label {
-  display: block;
-  opacity: 0.5;
-  height: 50px;
+
+h3 {
   text-align: center;
-  line-height: 50px;
+  margin-left: 5em;
 }
-body #scene #left-zone .list li.item input[type=radio] ~ label:first-letter {
-  text-transform: uppercase;
+
+h3 {
+  color: orange;
 }
-body #scene #left-zone .list li.item input[type=radio] ~ label:hover {
-  opacity: 0.75;
-  cursor: pointer;
+
+h1 {
+  color: orange;
 }
-body #scene #left-zone .list li.item input[type=radio] ~ label.label_strawberry:before {
-  content: " ";
-  display: block;
-  position: absolute;
-  width: 50px;
-  height: 50px;
-  margin-left: 15px;
-  background-position: center;
-  background-size: 75% 75%;
-  background-repeat: no-repeat;
+
+h6 {
+  color: black;
 }
-body #scene #left-zone .list li.item input[type=radio] ~ label.label_banana:before {
-  content: " ";
-  display: block;
-  position: absolute;
-  width: 50px;
-  height: 50px;
-  margin-left: 15px;
-  background-position: center;
-  background-size: 75% 75%;
-  background-repeat: no-repeat;
-}
-body #scene #left-zone .list li.item input[type=radio] ~ label.label_apple:before {
-  content: " ";
-  display: block;
-  position: absolute;
-  width: 50px;
-  height: 50px;
-  margin-left: 15px;
-  background-position: center;
-  background-size: 75% 75%;
-  background-repeat: no-repeat;
-}
-body #scene #left-zone .list li.item input[type=radio] ~ label.label_orange:before {
-  content: " ";
-  display: block;
-  position: absolute;
-  width: 50px;
-  height: 50px;
-  margin-left: 15px;
-  background-position: center;
-  background-size: 75% 75%;
-  background-repeat: no-repeat;
-}
-body #scene #left-zone .list li.item input[type=radio] ~ .content {
-  position: absolute;
-  left: 350px;
-  top: -400px;
-  width: 650px;
-  height: 400px;
-  -webkit-animation-duration: 0.75s;
-          animation-duration: 0.75s;
-  -webkit-animation-name: slideout;
-          animation-name: slideout;
-  -webkit-animation-timing-function: ease-out;
-          animation-timing-function: ease-out;
+
+.button {
   display: flex;
-  align-items: center;
+  flex-direction: row;
   justify-content: center;
-  flex-direction: column;
+  align-items: center;
+  font-size: 12px;
 }
-body #scene #left-zone .list li.item input[type=radio] ~ .content.content_strawberry h1 {
-  color: get-color(strawberry);
+
+.button {
+  color: orange;
 }
-body #scene #left-zone .list li.item input[type=radio] ~ .content.content_banana h1 {
-  color: get-color(banana);
+
+@media (max-width: 768px) {
+  .vara {
+    width: 20em;
+    height: 15em;
+  }
+  .add-to-cart {
+    font-size: 1.2em;
+  }
+  .Produktlista {
+    flex-direction: column;
+  }
 }
-body #scene #left-zone .list li.item input[type=radio] ~ .content.content_apple h1 {
-  color: get-color(apple);
-}
-body #scene #left-zone .list li.item input[type=radio] ~ .content.content_orange h1 {
-  color: get-color(orange);
-}
-body #scene #left-zone .list li.item input[type=radio] ~ .content h1:first-letter {
-  text-transform: uppercase;
-}
-body #scene #left-zone .list li.item input[type=radio] ~ .content p {
-  max-width: 50%;
-  text-align: center;
-}
-body #scene #left-zone .list li.item input[type=radio]:checked ~ label {
-  opacity: 1;
-  -webkit-animation: all 1s cubic-bezier(0.455, 0.03, 0.515, 0.955);
-          animation: all 1s cubic-bezier(0.455, 0.03, 0.515, 0.955);
-}
-body #scene #left-zone .list li.item input[type=radio]:checked ~ label.label_strawberry {
-  color: get-color(strawberry);
-  border-right: solid 4px get-color(strawberry);
-}
-body #scene #left-zone .list li.item input[type=radio]:checked ~ label.label_banana {
-  color: get-color(banana);
-  border-right: solid 4px get-color(banana);
-}
-body #scene #left-zone .list li.item input[type=radio]:checked ~ label.label_apple {
-  color: get-color(apple);
-  border-right: solid 4px get-color(apple);
-}
-body #scene #left-zone .list li.item input[type=radio]:checked ~ label.label_orange {
-  color: get-color(orange);
-  border-right: solid 4px get-color(orange);
-}
-body #scene #left-zone .list li.item input[type=radio]:checked ~ .content {
-  -webkit-animation-duration: 0.75s;
-          animation-duration: 0.75s;
-  -webkit-animation-name: slidein;
-          animation-name: slidein;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
-  -webkit-animation-timing-function: cubic-bezier(0.455, 0.03, 0.515, 0.955);
-          animation-timing-function: cubic-bezier(0.455, 0.03, 0.515, 0.955);
-}
-body #scene #middle-border {
-  background-color: gray;
-  height: 75%;
-  flex-grow: 1;
-  max-width: 2px;
-  z-index: 0;
-}
-body #scene #right-zone {
-  background: white;
-  height: 100%;
-  flex-grow: 3;
+@media (max-width: 320px) {
+  .add-to-cart {
+    font-size: 1rem;
+    display: inline-flex;
+    align-items: center;
+  }
 }/*# sourceMappingURL=style.css.map */
