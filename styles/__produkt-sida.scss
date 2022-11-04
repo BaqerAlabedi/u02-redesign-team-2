@@ -1,0 +1,64 @@
+.border{
+  border-style: double;
+  color: orange;
+}
+ul{
+  color: black;
+}
+.Produktlista{
+  display: flex;
+  flex-direction: row;
+}
+.Neråt{
+  margin-top: 2em;
+  padding: 0 6em 0;
+  padding-bottom: 5em;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+h3{
+  text-align: center; 
+}
+
+h1{
+  color: orange;
+}
+h4{
+  color: black;
+  text-align: center;
+  margin-bottom: 1.5em;
+}
+.button{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+}
+.button{
+  color: orange;
+}
+
+@media (max-width:768px) {
+  .vara{
+    width: 20em;
+    height: 15em;
+  }
+  .add-to-cart{
+    font-size: 1.2em;
+  }
+  .Produktlista{
+    flex-direction: column;
+  }
+}
+
+@media (max-width:320px){
+  .add-to-cart{
+    font-size: 1rem;
+    display: inline-flex;
+    align-items: center;
+  }
+}

@@ -7,63 +7,6 @@
 @import '__footer';
 @import '__news';
 @import '__om-oss';
+@import '__produkt-sida';
 
 
-
-.border{
-  border-style: double;
-  color: orange;
-}
-.Produktlista{
-  display: flex;
-  flex-direction: row;
-}
-.Neråt{
-  margin-top: 2em;
-  padding: 0 6em 0;
-  padding-bottom: 15em;
-}
-h3{
-  text-align: center;
-  margin-left: 5em;
-}
-h3{
-  color: orange;
-}
-h1{
-  color: orange;
-}
-h6{
-  color: black;
-}
-.button{
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  font-size: 12px;
-}
-.button{
-  color: orange;
-}
-
-@media (max-width:768px) {
-  .vara{
-    width: 20em;
-    height: 15em;
-  }
-  .add-to-cart{
-    font-size: 1.2em;
-  }
-  .Produktlista{
-    flex-direction: column;
-  }
-}
-
-@media (max-width:320px){
-  .add-to-cart{
-    font-size: 1rem;
-    display: inline-flex;
-    align-items: center;
-  }
-}
