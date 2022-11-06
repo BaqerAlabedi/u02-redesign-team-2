@@ -435,7 +435,7 @@ html body {
 }
 
 #hero {
-  background-image: linear-gradient(to right bottom, rgba(33, 32, 29, 0.407), rgba(237, 195, 11, 0.521)), url(../image/gittarimage.jpg);
+  background-image: linear-gradient(to right bottom, rgba(33, 32, 29, 0.407), rgba(237, 195, 11, 0.521)), url(../images/hero/gittarimage.jpg);
   background-position: top;
   background-size: cover;
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
