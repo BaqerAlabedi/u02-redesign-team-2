@@ -911,7 +911,7 @@ body {
 
 .border {
   border-style: solid;
-  color: #f7a31d;
+  border-color: #f7a31d;
 }
 
 h5 {
@@ -937,7 +937,6 @@ h5 {
 }
 .border {
   border-style: double;
-  color: orange;
 }
 
 ul {
@@ -966,7 +965,7 @@ h3 {
 }
 
 h1 {
-  color: orange;
+  color: rgb(0, 0, 0);
 }
 
 h4 {
@@ -1010,12 +1009,6 @@ h4 {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
-
-h1 {
-  font-size: 50px;
-  float: right;
-  margin-right: 100px;
 }
 
 body {
