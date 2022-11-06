@@ -990,7 +990,7 @@ h4 {
 @media (max-width: 768px) {
   .vara {
     width: 20em;
-    height: 15em;
+    height: auto;
   }
   .add-to-cart {
     font-size: 1.2em;
