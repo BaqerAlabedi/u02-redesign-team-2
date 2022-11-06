@@ -539,7 +539,7 @@ html body {
   }
 }
 #ljud-kort-list {
-  background-color: hsl(38deg, 67%, 51%);
+  background-color: rgb(214, 152, 46);
   padding: 3rem;
 }
 #ljud-kort-list .ljud-card {
@@ -583,7 +583,7 @@ html body {
   font-size: 20px;
   font-weight: 900;
   text-align: center;
-  background-color: hsl(38deg, 67%, 51%);
+  background-color: #f7a31d;
   float: right;
 }
 
@@ -604,7 +604,7 @@ html body {
 }
 
 .köp-btn {
-  background-color: hsl(38deg, 67%, 51%);
+  background-color: #f7a31d;
   border: 1px solid transparent;
   font-size: 30px;
   font-weight: 700;
@@ -618,7 +618,7 @@ html body {
   transition: transform 0.3s;
 }
 .köp-btn:hover {
-  background-color: hsl(38deg, 67%, 51%);
+  background-color: #f7a31d;
   transform: scale(1.1);
   transition: transform 0.3s;
   cursor: pointer;
@@ -711,7 +711,7 @@ a {
   border-radius: 10px;
   box-shadow: 5px 4px hsla(45deg, 4%, 57%, 0.637);
   border: 1px solid hsl(38deg, 67%, 51%);
-  background-color: hsl(38deg, 67%, 51%);
+  background-color: #f7a31d;
   color: hsla(60deg, 1%, 16%, 0.637);
   font-weight: 600;
   font-size: 15px;
@@ -733,13 +733,13 @@ a {
   padding: 10px 10px;
   border: 1px solid hsl(38deg, 67%, 51%);
   border-radius: 50%;
-  background-color: hsl(38deg, 67%, 51%);
+  background-color: #f7a31d;
   transition: transform 0.5s;
   cursor: pointer;
 }
 .payment i:hover {
   transform: scale(1.2);
-  background-color: hsl(38deg, 67%, 51%);
+  background-color: #f7a31d;
   color: white;
 }
 
