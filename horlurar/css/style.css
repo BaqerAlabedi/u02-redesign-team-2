@@ -1,0 +1,132 @@
+@charset "UTF-8";
+/* hörlurar kort section end */
+#hör-kort-list {
+  background-color: #d6982e;
+  padding: 3rem; }
+  #hör-kort-list .hör-card {
+    background-color: #fff;
+    padding: 4rem;
+    margin: 4rem;
+    border-radius: 2rem;
+    box-shadow: 1rem 1rem rgba(72, 70, 70, 0.1);
+    width: 75%; }
+
+.hör-image {
+  width: 12vw;
+  height: 15vw; }
+
+.hör-image1 {
+  width: 20vw;
+  height: 35vh; }
+
+.hör-image2 {
+  width: 15vw;
+  height: 35vh; }
+
+.hör-container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 1rem;
+  grid-row-gap: 1rem; }
+
+.h1-text {
+  text-align: center;
+  font-size: 45px;
+  padding: 30px;
+  font-weight: 900;
+  color: white;
+  text-transform: uppercase; }
+
+.pris-div {
+  border: 1px solid #000;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  padding: 20px;
+  font-size: 30px;
+  font-weight: 900;
+  text-align: center;
+  background-color: #f7a31d;
+  float: right;
+  margin-right: 20px; }
+
+.hör-kort-tittle {
+  font-size: 30px;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: #d6982e;
+  margin-bottom: 1rem;
+  text-align: center; }
+
+.hör-description {
+  font-size: 25px;
+  font-weight: 500;
+  margin-bottom: 2rem;
+  padding: 10px; }
+
+.köp-btn {
+  background-color: #f7a31d;
+  border: 1px solid transparent;
+  font-size: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding-left: 30px;
+  width: 25vw;
+  height: 8vh;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  box-shadow: 4px 6px rgba(83, 81, 81, 0.2);
+  transition: transform 0.3s; }
+  .köp-btn:hover {
+    background-color: #d6982e;
+    transform: scale(1.1);
+    transition: transform 0.3s;
+    cursor: pointer; }
+
+.container-bottom {
+  border-top: 4px solid #d6982e;
+  margin: 20px; }
+
+@media screen and (max-width: 600px) {
+  .hör-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    margin: 0 auto;
+    background: #d6982e;
+    margin-top: 20px;
+    margin-bottom: 20px; }
+  #hör-kort-list .hör-card {
+    width: 90%;
+    height: 60%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin: 0 auto; }
+  .hör-description {
+    font-size: 15px;
+    font-weight: 500;
+    margin-bottom: 1rem;
+    padding: 5px; }
+  .pris-div {
+    width: 50px;
+    height: 50px;
+    padding: 5px;
+    font-size: 15px; }
+  .hör-image {
+    width: 50%;
+    height: 50%; }
+  .hör-image1 {
+    width: 50%;
+    height: 50%; }
+  .hör-image2 {
+    width: 50%;
+    height: 50%; }
+  .köp-btn {
+    width: 100%;
+    height: 6vh;
+    font-size: 15px;
+    margin-top: 10px; }
+  .hör-kort-tittle {
+    font-size: 10px; } }
