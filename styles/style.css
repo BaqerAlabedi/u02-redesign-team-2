@@ -609,7 +609,6 @@ html body {
   font-size: 30px;
   font-weight: 700;
   text-transform: uppercase;
-  padding: 20px 20px;
   width: 25vw;
   height: 8vh;
   border-radius: 5px;
@@ -1013,7 +1012,6 @@ h4 {
 
 body {
   font-family: "Open Sans", sans-serif;
-  background-color: rgba(154, 156, 159, 0.5647058824);
   float: right;
   width: 100%;
 }
