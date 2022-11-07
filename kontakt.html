@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer">
+  <link rel="stylesheet" href="./styles/style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Kanit">
+  <title>Redesign JAM.se</title>
+</head>
+
+<body>
+
+  <header>
+
+    <img src="./images/logo/logo.png" class="logo" alt="jam logo">
+    <input type="checkbox" id="menu-bar">
+    <label for="menu-bar">&#9776;</label>
+    <div class="search">
+      <form action="https://www.google.com/search" method="get" class="search-bar">
+        <input type="text" placeholder="Sök..." name="q">
+        <button type="submit" aria-hidden="true">
+          <i class="fa fa-search"></i>
+        </button>
+      </form>
+    </div>
+    <nav class="navbar">
+      <div class="search-2">
+        <form action="https://www.google.com/search" method="get" class="search-bar">
+          <input type="text" placeholder="Sök..." name="q">
+          <button type="submit" aria-hidden="true">
+            <i class="fa fa-search"></i>
+          </button>
+        </form>
+      </div>
+      <ul>
+        <li><a href="#">Startsidan &#9660;</a>
+          <ul>
+            <li><a href="./index.html">Startsidan</a></li>
+            <li><a href="./om-oss.html">Om oss</a></li>
+            <li><a href="./kontakt.html">Butiker/Kontakt</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Produkter &#9660;</a>
+          <ul>
+            <li><a href="./mixerbord.html">Mixerbord</a></li>
+            <li><a href="./programvara.html">Programvara</a></li>
+            <li><a href="./hörlurar.html">Hörlurar</a></li>
+            <li><a href="./mikrofoner.html">Mikrofoner</a></li>
+            <li><a href="./ljudkort.html">Ljudkort</a></li>
+          </ul>
+        </li>
+        <li><a href="./gitarrbygg.html">Gitarrbyggcentrum</a></li>
+      </ul>
+
+    </nav>
+
+  </header>
+
+  <div class="contact-wrap">
+    <div class="contact-in">
+      <h1>Kontaktformulär</h1>
+      <h2><i class="fa fa-mobile" aria-hidden="true"></i> Telefon</h2>
+      <p>+468-612 21 23<br>+468-410 510 90</p>
+      <h2><i class="fa fa-envelope" aria-hidden="true"></i> E-post</h2>
+      <p>order@jam.se<br>johan@jam.se<br>oscar@jam.se</p>
+      <h2><i class="fa fa-map-marker" aria-hidden="true"></i> Adress</h2>
+      <p>Roslagsgatan 7 &amp; 19<br>113 55 Stockholm</p>
+      <ul>
+        <li><a href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></li>
+        <li><a href="#"><i class="fa fa-google" aria-hidden="true"></i></a></li>
+        <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+        <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+      </ul>
+    </div>
+    <div class="contact-in">
+      <h1>Fyll i formulär</h1>
+      <form>
+        <input type="text" placeholder="För- och efternamn" class="contact-in-input">
+        <input type="text" placeholder="E-postadress" class="contact-in-input">
+        <input type="text" placeholder="Kontaktnummer" class="contact-in-input">
+        <input type="text" placeholder="Beskriv ditt ärende" class="contact-in-input">
+        <label for="section">Vill Kontakta:</label>
+        <select id="section" name="section">
+          <option value="Order/Webshop">Order/Webshop</option>
+          <option value="Synth/Key/Studio">Synth/Key/Studio</option>
+          <option value="Gitarrer">Gitarrer</option>
+          <option value="Ljud/Ljus/Trummor">Ljud/Ljus/Trummor</option>
+          <option value="Service Elpiano/Clavinet">Service Elpiano/Clavinet</option>
+          <option value="Service Gitarrer">Service Gitarrer</option>
+        </select>
+        <textarea placeholder="Meddelande" class="contact-in-textarea"></textarea>
+        <button type="submit" class="contact-in-btn">SKICKA</button>
+      </form>
+    </div>
+    <div class="contact-in">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2034.2384903890804!2d18.058105916193387!3d59.34566671675457!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x465f9d6c00592bed%3A0xf2481bbc11c7dd81!2sRoslagsgatan%207%2C%20113%2055%20Stockholm!5e0!3m2!1ssv!2sse!4v1667489800273!5m2!1ssv!2sse"
+        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2034.2384903890804!2d18.058105916193387!3d59.34566671675457!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x465f9d6c15a5166f%3A0xdc5a2390c8fcb6f2!2sRoslagsgatan%2019%2C%20113%2055%20Stockholm!5e0!3m2!1ssv!2sse!4v1667489867407!5m2!1ssv!2sse"
+        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </div>
+
+  <footer id="footer-container">
+
+
+    <section class="footer-left">
+      <div id="image-logo"> <img src="./images/logo/logo.png " class="imglogo2" alt=" jam logo"></div>
+      <h3>Kontakta Oss </h3>
+      <p><i class="fa fa-envelope"></i> order@jam.se</p>
+      <p> <i class="fa fa-phone"></i>08-612 21 23</p>
+      <p><i class="fa fa-map-marker"></i><span>Roslagsgatan 19, </span> <br> 11355 Stockholm</p>
+
+    </section>
+
+    <section class="footer-center">
+      <div class="subscribe">
+        <form action="">
+          <input class="email" type="email" name="" id="" placeholder="Ange ditt mail">
+          <button class="subscribe-button"> Nyhetsbrev</button>
+        </form>
+      </div>
+      <div class="payment">
+        <i class="fa-brands fa-cc-visa"></i>
+        <i class="fa-brands fa-cc-mastercard"></i>
+        <i class="fa-brands fa-cc-paypal"></i>
+
+      </div>
+
+      <div class="copy">
+        <p class="footer-company-name">JAM &copy; 1996-2022 <i class="fa-solid fa-copyright"></i>
+          copyright 2022</p>
+
+      </div>
+    </section>
+
+    <section class="footer-right">
+      <div>
+        <a href="#https://www.facebook.com/jamsweden/">
+          <i class="fa-brands fa-facebook"></i></a>
+        <a href="#"> <i class="fa-brands fa-square-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+
+
+      </div>
+
+
+
+
+    </section>
+
+
+  </footer>
+</body>
+
+</html>
