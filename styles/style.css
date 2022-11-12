@@ -12,7 +12,7 @@ header {
   top: 0;
   left: 0;
   right: 0;
-  background: rgb(255, 255, 255);
+  background: #e0ddd7;
   box-shadow: 0 5px 10px rgbs(0, 0, 0, 0.1);
   display: flex;
   align-items: center;
@@ -33,7 +33,7 @@ header .navbar ul li ul {
   position: absolute;
   left: 0;
   width: 200px;
-  background: rgb(255, 255, 255);
+  background: #e0ddd7;
   display: none;
 }
 header .navbar ul li ul li {
@@ -43,19 +43,19 @@ header .navbar ul li ul li {
 header .navbar ul li a {
   font-size: 20px;
   padding: 20px;
-  color: rgb(214, 152, 46);
+  color: #ab3124;
   display: block;
 }
 header .navbar ul li a:hover {
-  background: rgb(214, 152, 46);
-  color: rgb(255, 255, 255);
+  background: #ab3124;
+  color: hsl(0deg, 0%, 0%);
 }
 header #menu-bar {
   display: none;
 }
 header label {
   font-size: 20px;
-  color: rgb(214, 152, 46);
+  color: #ab3124;
   cursor: pointer;
   display: none;
 }
@@ -78,7 +78,7 @@ header label {
     top: 100%;
     left: 0;
     right: 0;
-    background: rgb(255, 255, 255);
+    background: #e0ddd7;
     border-top: 1px solid rgba(0, 0, 0, 0.1);
     display: none;
   }
@@ -334,8 +334,9 @@ body #scene #right-zone {
 .search-bar {
   border-radius: 50px;
   border: 1px solid rgb(0, 0, 0);
-  background: rgb(214, 152, 46);
+  background: white;
   padding: 5px;
+  box-shadow: 0px 0px 10px 2px rgb(32, 30, 30);
 }
 
 input[type=text] {
@@ -344,7 +345,7 @@ input[type=text] {
   width: 40vw;
   outline: none;
   border: none;
-  color: #fff;
+  color: rgb(2, 2, 2);
 }
 
 button {
@@ -540,7 +541,7 @@ html body {
   }
 }
 #ljud-kort-list {
-  background-color: rgb(214, 152, 46);
+  background-color: #ab3124;
   padding: 3rem;
 }
 #ljud-kort-list .ljud-card {
@@ -584,15 +585,16 @@ html body {
   font-size: 20px;
   font-weight: 900;
   text-align: center;
-  background-color: #f7a31d;
+  background-color: #b92525;
   float: right;
+  color: white;
 }
 
 .ljud-kort-tittle {
   font-size: 30px;
   font-weight: 900;
   text-transform: uppercase;
-  color: hsl(38deg, 67%, 51%);
+  color: #ab3124;
   margin-bottom: 1rem;
   text-align: center;
 }
@@ -605,7 +607,7 @@ html body {
 }
 
 .köp-btn {
-  background-color: #f7a31d;
+  background-color: #b92525;
   border: 1px solid transparent;
   font-size: 30px;
   font-weight: 700;
@@ -616,9 +618,14 @@ html body {
   margin-bottom: 10px;
   box-shadow: 4px 6px rgba(83, 81, 81, 0.2);
   transition: transform 0.3s;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
 }
 .köp-btn:hover {
-  background-color: #f7a31d;
+  background-color: #36ab20;
+  color: rgb(0, 0, 0);
   transform: scale(1.1);
   transition: transform 0.3s;
   cursor: pointer;
@@ -626,7 +633,7 @@ html body {
 
 a {
   text-decoration: none;
-  color: #000;
+  color: rgb(252, 252, 252);
 }
 
 .container-bottom {
@@ -668,13 +675,13 @@ a {
 .footer-left h3 {
   font-size: 20px;
   margin-bottom: 10px;
-  color: hsl(38deg, 67%, 51%);
+  color: #ab3124;
   font-weight: 700;
 }
 .footer-left p {
   font-size: 15px;
   font-weight: 600;
-  color: rgb(49, 46, 46);
+  color: #ab3124;
   text-align: left;
   padding: 5px;
 }
@@ -696,7 +703,7 @@ a {
 .subscribe > form > input {
   width: 100%;
   height: 30px;
-  border: 1px solid hsl(38deg, 67%, 51%);
+  border: 1px solid #b92525;
   border-radius: 5px;
   padding: 10px;
   margin-bottom: 15px;
@@ -710,9 +717,9 @@ a {
   margin-bottom: 15px;
   border-radius: 10px;
   box-shadow: 5px 4px hsla(45deg, 4%, 57%, 0.637);
-  border: 1px solid hsl(38deg, 67%, 51%);
-  background-color: #f7a31d;
-  color: hsla(60deg, 1%, 16%, 0.637);
+  border: 1px solid #b92525;
+  background-color: #b92525;
+  color: hsl(0deg, 0%, 0%);
   font-weight: 600;
   font-size: 15px;
   cursor: pointer;
@@ -731,15 +738,15 @@ a {
 .payment i {
   font-size: 30px;
   padding: 10px 10px;
-  border: 1px solid hsl(38deg, 67%, 51%);
+  /* 		border: 1px solid hsl(38, 67%, 51%); */
   border-radius: 50%;
-  background-color: #f7a31d;
+  /* 		background-color: $background-color_2; */
   transition: transform 0.5s;
   cursor: pointer;
 }
 .payment i:hover {
   transform: scale(1.2);
-  background-color: #f7a31d;
+  background-color: #b92525;
   color: white;
 }
 
@@ -752,14 +759,15 @@ a {
   font-size: 25px;
   color: hsl(0deg, 0%, 0%) !important;
   justify-items: right;
-  border: 1px solid hsl(38deg, 67%, 51%);
+  /* 		border: 1px solid hsl(38, 67%, 51%); */
   padding: 10px 10px;
   border-radius: 50%;
-  background: hsl(38deg, 67%, 51%);
+  /* 		background: #b92525; */
   transition: transform 0.5s;
 }
 .footer-right i:hover {
   color: white !important;
+  background: #b92525;
   cursor: pointer;
   transform: scale(1.2);
 }
@@ -772,6 +780,10 @@ a {
   padding: 10px;
   text-align: center;
   background-color: none;
+}
+
+.footer-company-name {
+  color: #ab3124;
 }
 
 @media screen and (max-width: 768px) {
@@ -1034,7 +1046,7 @@ body {
   transition: all 0.4s ease-in-out;
   box-shadow: 0px 1px 5px 0px rgb(151, 143, 143);
   text-align: center;
-  background: linear-gradient(-135deg, #f7a31d, white);
+  background: linear-gradient(-135deg, #b92525, white);
 }
 
 .card:hover {
@@ -1071,7 +1083,7 @@ body {
 .card .card-principal:after {
   border-radius: 50%;
   z-index: 20;
-  background-color: #f7a31d;
+  background-color: #b92525;
   width: 50px;
   height: 50px;
   top: 0;
@@ -1203,7 +1215,7 @@ body {
   align-items: center;
   justify-content: center;
   gap: 5px;
-  background: linear-gradient(#f7a31d, white);
+  background: linear-gradient(#b92525, white);
 }
 
 .botones:hover {
@@ -1236,7 +1248,7 @@ section {
 
 .container .table_header {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   padding: 20px 30px 0;
 }
@@ -1260,7 +1272,7 @@ section {
 }
 
 .container thead {
-  background-color: #f7a31d;
+  background-color: #b92525;
 }
 
 .container th {
@@ -1274,7 +1286,7 @@ tbody tr td {
 }
 
 tbody tr:hover {
-  background-color: rgba(154, 156, 159, 0.5647058824);
+  background-color: #e0ddd7;
 }
 
 @media screen and (max-width: 900px) {
@@ -1325,18 +1337,19 @@ body {
 }
 
 .contact-in:nth-child(1) {
-  flex: 30%;
-  background: #D6982e;
+  flex: 10%;
+  background: #b92525;
 }
 
 .contact-in:nth-child(2) {
-  flex: 45%;
-  background: #D6982e;
+  flex: 25%;
+  background: #b92525;
 }
 
 .contact-in:nth-child(3) {
   flex: 25%;
   padding: 0;
+  margin-left: 1em;
 }
 
 .contact-in h1 {
@@ -1384,6 +1397,9 @@ body {
 .contact-in ul {
   padding: 0;
   margin: 0;
+  margin-bottom: 1em;
+  display: flex;
+  justify-content: flex-end;
 }
 
 .contact-in ul li {
@@ -1417,10 +1433,10 @@ input.contact-in-input {
   width: 100%;
   height: 40px;
   margin-bottom: 20px;
-  border: 1px solid #fff;
+  border: 1px solid rgb(0, 0, 0);
   outline: none;
   padding-left: 5px;
-  background: transparent;
+  background: rgba(245, 245, 245, 0.74);
   color: #fff;
   font-size: 12px;
   font-weight: 300;
@@ -1428,15 +1444,15 @@ input.contact-in-input {
 }
 
 .contact-in-input::-moz-placeholder {
-  color: #fff;
+  color: rgb(12, 12, 12);
 }
 
 .contact-in-input:-ms-input-placeholder {
-  color: #fff;
+  color: rgb(12, 12, 12);
 }
 
 .contact-in-input::placeholder {
-  color: #fff;
+  color: rgb(12, 12, 12);
 }
 
 .contact-in-textarea {
@@ -1444,12 +1460,12 @@ input.contact-in-input {
   height: 140px;
   margin-top: 5px;
   margin-bottom: 20px;
-  border: 1px solid #fff;
+  border: 1px solid rgb(2, 2, 2);
   outline: none;
   padding-top: 5px;
   padding-left: 5px;
-  background: transparent;
-  color: #fff;
+  background: rgba(243, 198, 198, 0.74);
+  color: rgb(8, 8, 8);
   font-size: 12px;
   font-weight: 300;
   border-radius: 15px;
@@ -1457,33 +1473,34 @@ input.contact-in-input {
 
 .order {
   border-radius: 15px;
-  background-color: transparent;
-  border: 1px solid #fff;
+  color: black;
+  /*     background-color: transparent; */
+  border: 1px solid rgb(0, 0, 0);
 }
 
 .order:optional {
-  background-color: #f7f7f7;
+  background-color: rgba(243, 198, 198, 0.74);
 }
 
 .contact-in-textarea::-moz-placeholder {
-  color: #fff;
+  color: rgb(5, 5, 5);
 }
 
 .contact-in-textarea:-ms-input-placeholder {
-  color: #fff;
+  color: rgb(5, 5, 5);
 }
 
 .contact-in-textarea::placeholder {
-  color: #fff;
+  color: rgb(5, 5, 5);
 }
 
 .contact-in-btn {
   width: 100%;
   height: 40px;
-  border: 1px solid #fff;
+  border: 1px solid rgb(8, 8, 8);
   outline: none;
-  background: transparent;
-  color: #fff;
+  background: rgba(243, 198, 198, 0.74);
+  color: rgb(0, 0, 0);
   font-size: 12px;
   font-weight: 300;
   cursor: pointer;

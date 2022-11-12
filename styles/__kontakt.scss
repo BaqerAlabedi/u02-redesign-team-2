@@ -29,20 +29,21 @@ body
 
 .contact-in:nth-child(1)
 {
-    flex: 30%;
-    background: #D6982e;
+    flex: 10%;
+    background: #b92525;
 }
 
 .contact-in:nth-child(2)
 {
-    flex: 45%;
-    background: #D6982e;
+    flex: 25%;
+    background: #b92525;
 }
 
 .contact-in:nth-child(3)
 {
     flex: 25%;
     padding: 0;
+    margin-left: 1em;
 }
 
 .contact-in h1
@@ -96,6 +97,9 @@ body
 {
     padding: 0;
     margin: 0;
+    margin-bottom: 1em;
+    display: flex;
+    justify-content: flex-end;
 }
 
 .contact-in ul li
@@ -134,10 +138,10 @@ input.contact-in-input
     width: 100%;
     height: 40px;
     margin-bottom: 20px;
-    border: 1px solid #fff;
+    border: 1px solid rgb(0, 0, 0);
     outline: none;
     padding-left: 5px;
-    background: transparent;
+    background: rgb(245 245 245 / 74%);
     color: #fff;
     font-size: 12px;
     font-weight: 300;
@@ -146,7 +150,7 @@ input.contact-in-input
 
 .contact-in-input::placeholder
 {
-    color: #fff;
+    color: rgb(12, 12, 12);
 }
 
 .contact-in-textarea
@@ -155,12 +159,12 @@ input.contact-in-input
     height: 140px;
     margin-top: 5px;
     margin-bottom: 20px;
-    border: 1px solid #fff;
+    border: 1px solid rgb(2, 2, 2);
     outline: none;
     padding-top: 5px;
     padding-left: 5px;
-    background: transparent;
-    color: #fff;
+    background: rgb(243 198 198 / 74%);
+    color: rgb(8, 8, 8);
     font-size: 12px;
     font-weight: 300;
     border-radius: 15px;
@@ -168,28 +172,29 @@ input.contact-in-input
 
 .order{
     border-radius: 15px;
-    background-color: transparent;
-    border: 1px solid #fff;
+    color: black;
+/*     background-color: transparent; */
+    border: 1px solid rgb(0, 0, 0);
 }
 
 .order:optional{
-    background-color: #f7f7f7;
+    background-color: rgb(243 198 198 / 74%);
 }
 
 
 .contact-in-textarea::placeholder
 {
-    color: #fff;
+    color: rgb(5, 5, 5);
 }
 
 .contact-in-btn
 {
     width: 100%;
     height: 40px;
-    border: 1px solid #fff;
+    border: 1px solid rgb(8, 8, 8);
     outline: none;
-    background: transparent;
-    color: #fff;
+    background: rgb(243 198 198 / 74%);
+    color: rgb(0, 0, 0);
     font-size: 12px;
     font-weight: 300;
     cursor: pointer;

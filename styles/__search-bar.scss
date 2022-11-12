@@ -13,8 +13,9 @@
 .search-bar{
   border-radius: 50px;
   border: 1px solid rgb(0, 0, 0);
-  background: $clr-primary;
+  background: white;
   padding: 5px;
+  box-shadow: 0px 0px 10px 2px rgb(32 30 30);
 }
 
 input[type="text"]{
@@ -23,7 +24,7 @@ input[type="text"]{
   width: 40vw;
   outline: none;
   border: none;
-  color: #fff;
+  color: rgb(2, 2, 2);
   
 }
 

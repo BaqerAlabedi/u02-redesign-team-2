@@ -33,13 +33,13 @@
 	h3 {
 		font-size: 20px;
 		margin-bottom: 10px;
-		color: $color_5;
+		color: $clr-primary;
 		font-weight: 700;
 	}
 	p {
 		font-size: 15px;
 		font-weight: 600;
-		color: $color_7;
+		color: $clr-primary;
 		text-align: left;
 		padding: 5px;
 	}
@@ -60,7 +60,7 @@
 		>input {
 			width: 100%;
 			height: 30px;
-			border: 1px solid hsl(38, 67%, 51%);
+			border: 1px solid #b92525;
 			border-radius: 5px;
 			padding: 10px;
 			margin-bottom: 15px;
@@ -75,9 +75,9 @@
 	margin-bottom: 15px;
 	border-radius: 10px;
 	box-shadow: 5px 4px hsla(45, 4%, 57%, 0.637);
-	border: 1px solid hsl(38, 67%, 51%);
+	border: 1px solid #b92525;
 	background-color: $background-color_2;
-	color: $color_8;
+	color: $clr-text;
 	font-weight: 600;
 	font-size: 15px;
 	cursor: pointer;
@@ -94,9 +94,9 @@
 	i {
 		font-size: 30px;
 		padding: 10px 10px;
-		border: 1px solid hsl(38, 67%, 51%);
+/* 		border: 1px solid hsl(38, 67%, 51%); */
 		border-radius: 50%;
-		background-color: $background-color_2;
+/* 		background-color: $background-color_2; */
 		transition: transform 0.5s;
 		cursor: pointer;
 		&:hover {
@@ -114,13 +114,14 @@
 		font-size: 25px;
 		color: $color_6 !important;
 		justify-items: right;
-		border: 1px solid hsl(38, 67%, 51%);
+/* 		border: 1px solid hsl(38, 67%, 51%); */
 		padding: 10px 10px;
 		border-radius: 50%;
-		background: hsl(38, 67%, 51%);
+/* 		background: #b92525; */
 		transition: transform 0.5s;
 		&:hover {
 			color: $color_9 !important;
+			background: #b92525;
 			cursor: pointer;
 			transform: scale(1.2);
 		}
@@ -135,6 +136,11 @@
 	text-align: center;
 	background-color: $background-color_3;
 }
+
+.footer-company-name{
+	color: $clr-primary;
+}
+
 @media screen and (max-width: 768px) {
 	.btn-hero {
 		&:link {

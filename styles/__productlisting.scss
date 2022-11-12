@@ -41,12 +41,13 @@
 	text-align: center;
 	background-color: $background-color_2;
 	float: right;
+	color: $color_9;
 }
 .ljud-kort-tittle {
 	font-size: 30px;
 	font-weight: 900;
 	text-transform: uppercase;
-	color: $color_5;
+	color: $clr-primary;
 	margin-bottom: 1rem;
 	text-align: center;
 }
@@ -68,8 +69,14 @@
 	margin-bottom: 10px;
 	box-shadow: 4px 6px rgba(83, 81, 81, 0.2);
 	transition: transform 0.3s;
+	display: flex;
+	align-content: center;
+	justify-content: center;
+	align-items: center;
+	
 	&:hover {
-		background-color: $background-color_2;
+		background-color: $clr-htext;
+		color: rgb(0, 0, 0);
 		transform: scale(1.1);
 		transition: transform 0.3s;
         cursor: pointer;
@@ -77,5 +84,5 @@
 }
 a{
 	text-decoration: none;
-	color: #000;
+	color: rgb(252, 252, 252);
 }
