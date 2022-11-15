@@ -62,7 +62,6 @@ header label {
 
 .logo {
   max-width: 70px;
-  border-radius: 50px;
 }
 
 @media (max-width: 768px) {
@@ -659,9 +658,8 @@ a {
   margin-bottom: 70px;
 }
 #image-logo img {
-  width: 50px;
-  height: 50px;
-  border: 1px solid hsl(38deg, 67%, 51%);
+  width: 90px;
+  height: 90px;
   border-radius: 50%;
 }
 
