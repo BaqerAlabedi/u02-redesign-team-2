@@ -78,3 +78,30 @@ body{
     100%{
       transform: translateY(10px);
     }  }
+
+
+    @media screen and (max-width: 900px) {
+      body {
+        margin-bottom: 30px;
+      }
+      .cover {
+        width: 90%;
+        text-align: center;
+      }
+      .container-info{
+        padding-bottom: 330px;
+       
+      }
+     .container-vector,
+     .container-vector1{
+      img{
+        padding: 30px 30px 30px 30px;
+        position: absolute;
+        bottom: 10px;
+        right: -37px;
+        height: 15%;
+        width: 336px;
+        
+      }
+     }
+    }
