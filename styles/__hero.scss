@@ -134,7 +134,8 @@ html {
 }
 
 @media (max-width: 768px) {
-	.hero-container p{
-		font-size: 15px;
+	#hero {
+		width: 35%;
+		height: 80vh;
 	}
 }
